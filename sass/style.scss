@@ -1,0 +1,161 @@
+$primary-clr: hsl(25, 97%, 53%);
+
+$neutral-clr-100: white;
+$neutral-clr-300: hsl(217, 12%, 63%);
+$neutral-clr-400: hsla(216, 12%, 54%, 0.2);
+$neutral-clr-600: hsl(213, 19%, 18%);
+$neutral-clr-700: hsl(216, 12%, 8%);
+
+/* General styling */
+
+* {
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+}
+
+body {
+    background-color: $neutral-clr-700;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+} 
+
+.attribution {
+    color: $neutral-clr-100;
+    position: absolute;
+    bottom: 0;
+    align-self: center;
+    & a:hover {
+        color: $primary-clr;
+    }
+}
+
+
+/* Card styling */
+
+.score-card,
+.thank-you {
+    background-color: $neutral-clr-600;
+    border-radius: 2rem;
+    padding: 2rem;
+    width: 375px;
+}
+
+h1 {
+    color: $neutral-clr-100;
+    font-size: 2rem;
+}
+
+p {
+    margin-bottom: 2rem;
+    color: $neutral-clr-300;
+}
+
+p, ol li {
+    color: $neutral-clr-300;
+}
+
+ol li,
+.nav-img {
+    background-color: $neutral-clr-400;
+}
+
+.nav-img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ol {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+ol li {
+    list-style: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    &:hover {
+        background-color: $primary-clr;
+        color: $neutral-clr-100;
+        cursor: pointer;
+    }
+    &.active {
+        background-color: $neutral-clr-300;
+        color: $neutral-clr-100;
+    }
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $neutral-clr-400;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button */
+
+button {
+    background-color: $primary-clr;
+    color: $neutral-clr-100;
+    border: none;
+    border-radius: 3rem;
+    width: 100%;
+    height: 3rem;
+    &:hover {
+        background-color: $neutral-clr-100;
+        color: $primary-clr;
+        cursor: pointer;
+    }
+    margin-top: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+}
+
+
+/* Thank you card */
+
+.thank-you {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    p:last-child {
+        margin: 0 1rem 1rem 1rem;
+    }
+    h1 {
+        margin: 0;
+    }
+}
+
+.grade {
+    color: $primary-clr;
+    background-color: $neutral-clr-400;
+    padding: .75rem 1.5rem;
+    border-radius: 2rem;
+    margin: 2rem auto;
+}
+
+/* Media queries */

@@ -1,0 +1,147 @@
+/* General styling */
+* {
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+
+.attribution {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  align-self: center;
+}
+.attribution a:hover {
+  color: hsl(25, 97%, 53%);
+}
+
+/* Card styling */
+.score-card,
+.thank-you {
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 2rem;
+  padding: 2rem;
+  width: 375px;
+}
+
+h1 {
+  color: white;
+  font-size: 2rem;
+}
+
+p {
+  margin-bottom: 2rem;
+  color: hsl(217, 12%, 63%);
+}
+
+p, ol li {
+  color: hsl(217, 12%, 63%);
+}
+
+ol li,
+.nav-img {
+  background-color: hsla(216, 12%, 54%, 0.2);
+}
+
+.nav-img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ol {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+ol li {
+  list-style: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+ol li:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  cursor: pointer;
+}
+ol li.active {
+  background-color: hsl(217, 12%, 63%);
+  color: white;
+}
+
+.img-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: hsla(216, 12%, 54%, 0.2);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Button */
+button {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  border: none;
+  border-radius: 3rem;
+  width: 100%;
+  height: 3rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+button:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+/* Thank you card */
+.thank-you {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.thank-you p:last-child {
+  margin: 0 1rem 1rem 1rem;
+}
+.thank-you h1 {
+  margin: 0;
+}
+
+.grade {
+  color: hsl(25, 97%, 53%);
+  background-color: hsla(216, 12%, 54%, 0.2);
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  margin: 2rem auto;
+}
+
+/* Media queries */
