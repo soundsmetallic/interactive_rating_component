@@ -29,15 +29,15 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://github.com/soundsmetallic/interactive_rating_component)
+- [Live Site URL](https://soundsmetallic.github.io/interactive_rating_component/)
 
 ## My process
 
 - Format the html file.
 - Add the fonts.
 - Style the document to match the design.
-- Write the script that changes the state of the document when a score was submitted.
+- Write the script that changes the state of the document when a score is submitted.
 
 ### Built with
 
